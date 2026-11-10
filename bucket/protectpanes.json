@@ -3,7 +3,7 @@
     "description": "UniFi Protect live view for Windows: each camera in its own borderless window you can place and size anywhere.",
     "homepage": "https://github.com/jamesccupps/UnifiCameraViewer",
     "license": "MIT",
-    "notes": "Protect Panes can also update itself; 'scoop update protectpanes' works either way.",
+    "notes": "Update it with 'scoop update protectpanes'. From 1.4.7 the app tells you when a new version is out but leaves installing it to Scoop.",
     "architecture": {
         "64bit": {
             "url": "https://github.com/jamesccupps/UnifiCameraViewer/releases/download/v1.4.6/ProtectPanes-win32-x64.zip",
