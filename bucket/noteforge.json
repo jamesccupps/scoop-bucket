@@ -3,7 +3,7 @@
     "description": "Encrypted, offline, OneNote-style note-taking (AES-256-GCM); your notes never leave your PC.",
     "homepage": "https://github.com/jamesccupps/NoteForge",
     "license": "MIT",
-    "notes": "Notes are kept in %APPDATA%\\NoteForge, so they survive updates and uninstalls.",
+    "notes": "Notes are kept in $persist_dir\\NoteForge Data, so they survive updates and uninstalls. Update with 'scoop update noteforge'.",
     "architecture": {
         "64bit": {
             "url": "https://github.com/jamesccupps/NoteForge/releases/download/v2.9.1/NoteForge-2.9.1-portable.exe#/NoteForge.exe",
@@ -16,6 +16,7 @@
             "NoteForge"
         ]
     ],
+    "persist": "NoteForge Data",
     "checkver": {
         "github": "https://github.com/jamesccupps/NoteForge"
     },
