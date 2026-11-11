@@ -29,6 +29,10 @@ Update everything with `scoop update *`.
 Settings and data stay in each app's usual folder in your profile (`%APPDATA%`, `%LOCALAPPDATA%` or
 `.netsentinel`), so they survive Scoop updates and uninstalls.
 
+[HW Blackbox](https://github.com/jamesccupps/HW-Blackbox) isn't here on purpose: it runs as a Windows service and
+its installer needs administrator rights, which Scoop's per-user installs and updates can't handle cleanly. Install it
+from its [latest release](https://github.com/jamesccupps/HW-Blackbox/releases/latest).
+
 ## How it stays current
 
 The Excavator workflow checks every app's latest GitHub release every 4 hours and updates the manifest's version, URL
