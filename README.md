@@ -3,7 +3,8 @@
 [![Tests](https://github.com/jamesccupps/scoop-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/jamesccupps/scoop-bucket/actions/workflows/ci.yml) [![Excavator](https://github.com/jamesccupps/scoop-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/jamesccupps/scoop-bucket/actions/workflows/excavator.yml)
 
 My Windows apps for [Scoop](https://scoop.sh), the command-line installer. Every app here is open source (MIT) and
-downloaded straight from its own GitHub release, checked against the release's SHA-256.
+downloaded straight from its own GitHub release. Each download is checked against the SHA-256 the release
+publishes (NoteForge publishes none, so its hash is taken from the file when a new version is picked up).
 
 ## Install
 
@@ -36,4 +37,6 @@ from its [latest release](https://github.com/jamesccupps/HW-Blackbox/releases/la
 ## How it stays current
 
 The Excavator workflow checks every app's latest GitHub release every 4 hours and updates the manifest's version, URL
-and hash on its own. Something wrong with a manifest? [Open an issue](https://github.com/jamesccupps/scoop-bucket/issues).
+and hash on its own. A changed hash for a version that is already out is never accepted automatically: these
+apps don't replace published files. GitHub pauses scheduled workflows after 60 days without a commit here; if
+updates stop arriving, the Actions tab has a button to turn Excavator back on. Something wrong with a manifest? [Open an issue](https://github.com/jamesccupps/scoop-bucket/issues).

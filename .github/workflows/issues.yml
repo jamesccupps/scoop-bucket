@@ -5,8 +5,10 @@ on:
     types: [opened, labeled]
 
 permissions:
-  # Auto hash fixing commits
-  contents: write
+  # Labels and answers issues only. No `contents: write`: the handler would use it to commit a new hash
+  # when someone reports "hash check failed". These apps never replace a published release file, so a
+  # changed hash is something to look into by hand, not to accept. Keep it this way after template updates.
+  contents: read
   issues: write
 
 jobs:
