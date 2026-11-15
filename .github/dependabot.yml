@@ -1,0 +1,7 @@
+# Keeps the pinned actions in the workflows current (they are pinned by commit, so nothing else would).
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
